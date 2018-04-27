@@ -6,7 +6,7 @@ import './styles.css';
 import { API } from './api.js'
 
 $(document).ready(function(){
-  $('form#userForm').submit(fucntion(event) {
+  $('form#userForm').submit(function(event) {
     event.preventDefault();
     let apiCall = new API();
     let promiseSearch = apiCall.testSearch();
