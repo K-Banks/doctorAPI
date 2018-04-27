@@ -28,6 +28,7 @@ $(document).ready(function(){
     let userState = $("input#userState").val();
     let userLocation = userState + "-" + userCity;
     userLocation = userLocation.toLowerCase();
+    $("span#searchLocation").text(`${userCity}, ${userState}`);
 
     let promiseSearch = apiCall.SearchByIssue(issueSearchString, userLocation);
     promiseSearch.then(function(response) {
