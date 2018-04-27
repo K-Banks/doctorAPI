@@ -75,7 +75,7 @@ _Please contact author at kayleubanks@gmail.com with any bugs._
 | :-------------     | :------------- | :------------- |
 | The program will return first name, last name, address, phone number, website and patient load for any response with a doctor. | "Podiatrist" | "Dr. Meta Tarsal, 37 SW 28th, (888)-475-9087, MetatarsalRUs.com, currently accepting new patients." |
 | The program will return list of qualified doctors based on submitted medical issue. | "Diabetes" | "Dr. Kid Knee, Endocrinologist; Dr. Lupe Henle, Endocrinologist" |
-| The program will return lost of doctors based on submitted name. | "Kid" | "Dr. Kid Knee, Endocrinologist; Dr. Kid Frendlie, Pediatrician" |
+| The program will return list of doctors based on submitted name. | "Kid" | "Dr. Kid Knee, Endocrinologist; Dr. Kid Frendlie, Pediatrician" |
 | The program will return a notification containing error information if an error occurred during search. | User submission: "Chest pain" | Error notification: "There was an error processing this request. Please try again. (Error message: unknownerror)" |
 | The program will return a notification that no results were found if a query returns no results. | "Etymologist" | "No results were found for: Etymologist" |
 
