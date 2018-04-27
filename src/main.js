@@ -3,6 +3,19 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
-$(document).ready(function(){
+import { API } from './api.js'
 
+$(document).ready(function(){
+  $('form#userForm').submit(fucntion(event) {
+    event.preventDefault();
+    let apiCall = new API();
+    let promiseSearch = apiCall.testSearch();
+
+    promiseSearch.then(function(response) {
+      console.log(response);
+      debugger;
+    }, function(error) {
+      console.log(error);
+    });
+  });
 });
