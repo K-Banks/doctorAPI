@@ -78,6 +78,7 @@ _Please contact author at kayleubanks@gmail.com with any bugs._
 | The program will return list of doctors based on submitted name. | "Kid" | "Dr. Kid Knee, Endocrinologist; Dr. Kid Frendlie, Pediatrician" |
 | The program will return a notification containing error information if an error occurred during search. | User submission: "Chest pain" | Error notification: "There was an error processing this request. Please try again. (Error message: unknownerror)" |
 | The program will return a notification that no results were found if a query returns no results. | "Etymologist" | "No results were found for: Etymologist" |
+| The program will return a list of doctors nearby user submitted location. | "Santa Ana, CA" | "Searching for doctors in: Santa Ana, CA" |
 
 
 ### License
