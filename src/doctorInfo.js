@@ -17,8 +17,9 @@ class Doctor {
     practiceInformationArray.push(practice.phones[0].number);
     practiceInformationArray.push(practice.website);
     practiceInformationArray.push(practice.accepts_new_patients);
-    console.log("After practice information compilation: " + practiceInformationArray);
     return practiceInformationArray;
   }
 
 }
+
+export { Doctor };

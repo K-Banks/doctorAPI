@@ -3,7 +3,6 @@ import { apiKey } from './../.env';
 class API {
 
   testSearch() {
-    debugger
     let promise = new Promise(function(resolve, reject) {
       const xhr = new XMLHttpRequest();
       xhr.open('GET', `https://api.betterdoctor.com/2016-03-01/doctors?location=or-portland&skip=0&limit=3&user_key=${apiKey}`);
