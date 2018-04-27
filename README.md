@@ -39,6 +39,7 @@ _This project uses the BetterDoctor API to get relevant information about local 
 
   #### Linking API key
   * this application requires an API key to run properly
+    * get a personal API key from https://developer.betterdoctor.com/
   * create a .env files
   * create a variable named 'exports.apiKey' and bind to your personal API keys
   * export the apiKey variable
