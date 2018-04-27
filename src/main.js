@@ -13,22 +13,25 @@ $("div.output").hide();
 $(document).ready(function(){
   $('form#mdIssueForm').submit(function(event) {
     event.preventDefault();
+    
     const apiCall = new API();
     const outputCall = new Output();
-    let issueSearchString = $("#issueStringSubmission").val();
-    $("#issueStringSubmission").val("");
+
     $("div.output").hide();
     $("div.output").empty();
     $("div.noResult").hide();
     $("div.errorOuput").hide();
-    $("span#searchString").text(issueSearchString);
-    $("p#searchStore").show();
 
+    let issueSearchString = $("#issueStringSubmission").val();
     let userCity = $("input#userCity").val();
     let userState = $("input#userState").val();
     let userLocation = userState + "-" + userCity;
     userLocation = userLocation.toLowerCase();
+
+    $("span#searchString").text(issueSearchString);
     $("span#searchLocation").text(`${userCity}, ${userState}`);
+    $("#issueStringSubmission").val("");
+    $("p#searchStore").show();
 
     let promiseSearch = apiCall.SearchByIssue(issueSearchString, userLocation);
     promiseSearch.then(function(response) {
