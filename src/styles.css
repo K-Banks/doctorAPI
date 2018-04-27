@@ -1,0 +1,19 @@
+.output {
+  width: 60em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  display: flex;
+
+  width: 15em;
+  margin-bottom: 1.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.output, .noResult, .errorOutput {
+  display: none;
+}

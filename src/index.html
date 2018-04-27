@@ -8,13 +8,19 @@
     <div class="container">
       <div class="card">
         <form id="mdIssueForm">
-          <h3>Enter a medical issue</h3>
+          <h3>Search for a doctor by medical issue</h3>
           <input type="text" value="" id="issueStringSubmission">
-          <button type="submit" class="button">Search!</button>
+          <button type="submit" class="btn">Search!</button>
         </form>
         <p>Your search was for: <span id="searchString"></span> </p>
       </div>
       <div class="output card">
+      </div>
+      <div class="card noResult">
+        <h3>Your search returned no results.</h3>
+      </div>
+      <div class="errorOutput card">
+        <h1 id="errorShow"></h1>
       </div>
     </div>
   </body>
